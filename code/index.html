@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Login | WH4T-T0-D0!</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <div class="loginPage">
         <div class="loginBox">
             <h2>User Login</h2>
-            <div class="form-row">
-                <label for="userName">Username:</label>
-                <input type="text" id="userName" placeholder="Enter username">
+            <div class="user">
+                <div class="form-row">
+                    <label for="userName">Username:</label>
+                    <input type="text" id="userName" placeholder="Enter username">
+                </div>
+                
+                <div class="form-row password-wrapper">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <img src="files/eye-closed.png" id="togglePassword" class="eye-icon" onclick="togglePassword()">
+                </div>
+                <button onclick="info()">Login ➜</button>
             </div>
-            <div class="form-row password-wrapper">
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Password">
-                <img src="files/eye-closed.png" id="togglePassword" class="eye-icon" onclick="togglePassword()">
-            </div>
-            <button onclick="info()">Login ➜</button>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
+
 </html>
